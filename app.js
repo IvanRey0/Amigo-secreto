@@ -1,8 +1,8 @@
 let amigos=[];
 
 function agregarAmigo(){
-    const input= document.getElementById("Amigo");
-    const nombre = input.ariaValueMax.trim()
+    const input= document.getElementById("amigo");
+    const nombre = input.value.trim()
 
 
 if (nombre === ""){
