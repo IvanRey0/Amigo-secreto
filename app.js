@@ -29,14 +29,16 @@ function mostrarListaAmigos(){
     }
 }
 
+function sortearAmigo(){
 if (amigos.length === 0) {
     alert ("Agrega amigos para poder sortearlos")
     return;
 }
 
-let indiceAleatorio=Math,floor(Math.random() * amigos.length);
+let indiceAleatorio=Math.floor(Math.random() * amigos.length);
 
 let amigoSorteado=amigos[indiceAleatorio];
 
-let listaResultado = document.getElementById("Resultado");
+let listaResultado = document.getElementById("resultado");
 listaResultado.innerHTML=`<li>${amigoSorteado}</li>`; 
+}
