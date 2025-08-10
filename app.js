@@ -28,3 +28,15 @@ function mostrarListaAmigos(){
 
     }
 }
+
+if (amigos.length === 0) {
+    alert ("Agrega amigos para poder sortearlos")
+    return;
+}
+
+let indiceAleatorio=Math,floor(Math.random() * amigos.length);
+
+let amigoSorteado=amigos[indiceAleatorio];
+
+let listaResultado = document.getElementById("Resultado");
+listaResultado.innerHTML=`<li>${amigoSorteado}</li>`; 
