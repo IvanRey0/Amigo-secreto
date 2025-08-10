@@ -12,12 +12,19 @@ if (nombre === ""){
 
 //Agregar nombre a array
 amigos.push(nombre);
-
-//mostar en lista virtuañ
-const lista= document.getElementById("listaAmigos");
-const nuevoElemento=document.createElement("li");
-nuevoElemento.textContent=nombre;
-lista.appendChild(nuevoElemento);
-
 input.value="";
+
+mostrarListaAmigos();
+}
+
+function mostrarListaAmigos(){
+    const lista = document.getElementById("listaAmigos");
+    lista.innerHTML = "";
+
+    for(let i=0; i<amigos.length; i++){
+        const li = document.createElement("li");
+        li.textContent=amigos[i];
+        lista.appendChild(li);
+
+    }
 }
